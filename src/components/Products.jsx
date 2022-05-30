@@ -14,7 +14,7 @@ const Products = () => {
 
   useEffect (()=> {
    
-       axios("http://localhost:3000/products/?limit=3/?page=1").then((res) =>{
+       axios("http://localhost:8080/products/?limit=3/?page=1").then((res) =>{
          setData(res.data.json());
          console.log(data);
        });
